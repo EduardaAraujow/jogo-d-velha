@@ -14,11 +14,11 @@ function AtualizarJogadorAtual() {
  if (vezDoJogador == jogador1) {
 
   var jogador = document.querySelectorAll('div#container img')[0];
-  jogador.setAttribute("src","img/x.jpg");
+  jogador.setAttribute("src","/img/x.jpg");
  }
  else{
   var jogador = document.querySelectorAll('div#container img')[0];
-  jogador.setAttribute("src","img/bola.jpg");
+  jogador.setAttribute("src","/img/bola.jpg");
  }
 }
 
@@ -34,12 +34,12 @@ function ComecarJogo(){
    if (this.getElementsByTagName("img").length == 0) {
 
     if (vezDoJogador == jogador1) {
-     this.innerHTML = "<img src='img/x.jpg'>";
+     this.innerHTML = "<img src='/img/x.jpg'>";
      this.setAttribute("jogada", jogador1);
      vezDoJogador = jogador2;
     }
     else{
-     this.innerHTML = "<img src='img/bola.jpg'>";
+     this.innerHTML = "<img src='/img/bola.jpg'>";
      this.setAttribute("jogada", jogador2);
      vezDoJogador = jogador1;
     }
