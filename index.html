@@ -11,10 +11,27 @@
 </head>
 
 <body>
-    <div id="ls">
-        <p>MD JOGO DA VELHA</p>
+    <h1>MD JOGO DA VELHA</h1>
+    <div id="menu_container">
+        <form id="jogadores">
+            <div id="full-box">
+                <label for="nome">Digite o nome do primeiro jogador</label>
+                <input type="txt" id="primeiro_nome" autocomplete="off" placeholder="primeiro_jogador"/>
+            </div>
+            <div class="full-box">
+                <label for="nome">Digite o nome do primeiro jogador</label>
+                <input type="txt" id="segundo_nome" autocomplete="off" placeholder="segundo_jogador"/>
+            </div>
+            <div class="full-box">
+                <input type="text" id="segundo_botão" value="COMEÇAR">
+            </div>
+        </form>
     </div>
-    
+    <div class="conteiner">
+        <div class="vez_do_Jogador">
+            <p>SUA VEZ DE JOGAR:</p>
+            <p id="vez_do_Jogador"></p>
+        </div>
     <div id="container">
         <p>Vez do jogador:</p>
         <img src="">
