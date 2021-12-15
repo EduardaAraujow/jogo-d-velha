@@ -12,14 +12,20 @@ function AtualizarJogadorAtual() {
  if (gameOver) {return;}
 
  if (vezDoJogador == jogador1) {
+if (gameOver) {
+        return;
+    }
 
-  var jogador = document.querySelectorAll('div#container img')[0];
-  jogador.setAttribute("src","/img/x.jpg");
- }
- else{
-  var jogador = document.querySelectorAll('div#container img')[0];
-  jogador.setAttribute("src","/img/bola.jpg");
- }
+    let jogador;
+
+    if (vez == jogador1){
+        jogador = document.querySelector("#primeiro_nome");
+    }else{
+        jogador = document.querySelector("#segundo_nome");
+    }
+
+    var vez_p = document.getElementById("vezDoJogador");
+    vez_p.textContent = jogador.value;   
 }
 
 function ComecarJogo(){
